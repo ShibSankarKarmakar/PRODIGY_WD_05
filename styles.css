@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('white-cloud-blue-sky.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background: #007BFF;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #007BFF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.weather-info {
+    background: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.weather-info p {
+    font-size: 16px;
+    color: #007BFF;
+    margin: 10px 0;
+}
